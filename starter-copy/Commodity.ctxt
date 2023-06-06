@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Commodity
+comment0.text=\r\n\ An\ interface\ for\ the\ TimsProduct\ to\ use\ for\ pricing.\r\n\r\n\ @author\ \ \ \ \ \ Zachary\ Sousa\r\n\ @version\ \ \ \ \ 1.00\r\n
+comment1.params=
+comment1.target=double\ getProductionCost()
+comment1.text=\r\n\ getProductionCost\r\n\ @return\ double\ \ \ \ \ \ \ the\ cost\ to\ make\ the\ product\r\n
+comment2.params=
+comment2.target=double\ getRetailPrice()
+comment2.text=\r\n\ getRetailPrice\r\n\ @return\ double\ \ \ \ \ \ \ the\ cost\ to\ purchase\ the\ product\r\n
+numComments=3

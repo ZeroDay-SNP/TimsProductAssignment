@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=TimsOrder
+comment0.text=\r\n\ A\ TimsOrder\ stores\ every\ item\ that\ the\ user\ wishes\ to\ purchase.\r\n\r\n\ @author\ \ \ \ \ \ Zachary\ Sousa\r\n\ @version\ \ \ \ \ 1.00\r\n
+comment1.params=name\ size
+comment1.target=TimsOrder(java.lang.String,\ int)
+comment1.text=\r\n\ TimsOrder\ constructor,\ called\ by\ the\ create()\ method.\r\n\ @param\ name\ \ \ \ \ \ the\ name\ of\ the\ customer\r\n\ @param\ size\ \ \ \ \ \ the\ amount\ of\ items\ to\ purchase\r\n
+comment2.params=
+comment2.target=TimsOrder\ create()
+comment2.text=\r\n\ create\ prompts\ the\ user\ with\ questions\ about\ their\ order,\ then\ creates\ an\ instance\ of\ TimsOrder.\r\n\ @return\ new\ TimsOrder\r\n
+comment3.params=
+comment3.target=double\ getAmountDue()
+comment3.text=\r\n\ getAmountDue\r\n\ @return\ double\ \ \ \ \ \ \ the\ price\ of\ the\ order\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ toString\r\n\ @return\ \ useful\ information\ about\ the\ TimsOrder\r\n
+numComments=5
