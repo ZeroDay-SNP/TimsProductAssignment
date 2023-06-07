@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TestClass
+comment0.text=\r\n\ TestClass\ for\ Tim\ Hortons\ Assignment.\r\n\ @author\ Sam\ Scott,\ Zachary\ Sousa\ (JavaDoc)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ main\r\n\ Starts\ the\ order\ process.\r\n
+numComments=2

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Consumable
+comment0.text=\r\n\ An\ interface\ for\ the\ TimsProduct\ to\ use\ for\ eating.\r\n\r\n\ @author\ \ \ \ \ \ Zachary\ Sousa\r\n\ @version\ \ \ \ \ 1.00\r\n
+comment1.params=
+comment1.target=int\ getCalorieCount()
+comment1.text=\r\n\ getCalorieCount\r\n\ @return\ int\ \ \ \ \ \ the\ calorie\ count\r\n
+comment2.params=
+comment2.target=java.lang.String\ getConsumptionMethod()
+comment2.text=\r\n\ getConsumptionMethod\r\n\ @return\ String\ \ \ \ \ \ \ the\ cost\ to\ purchase\ the\ product\r\n
+numComments=3

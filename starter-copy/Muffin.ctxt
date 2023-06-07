@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Muffin
+comment0.text=\r\n\ Tim\ Hortons\ Muffin.\ You\ can\ buy\ it.\r\n\r\n\ @author\ \ \ \ \ \ Zachary\ Sousa\r\n\ @version\ \ \ \ \ 1.00\r\n
+comment1.params=name\ cost\ price\ calories\ description
+comment1.target=Muffin(java.lang.String,\ double,\ double,\ int,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ the\ Muffin\r\n\ @param\ name\ \ \ \ \ \ \ \ \ \ the\ name\ of\ the\ product\r\n\ @param\ cost\ \ \ \ \ \ \ \ \ \ the\ cost\ to\ make\ the\ product\r\n\ @param\ price\ \ \ \ \ \ \ \ \ the\ price\ to\ buy\ the\ product\r\n\ @param\ calories\ \ \ \ \ \ the\ calories\ of\ the\ Muffin\r\n\ @param\ description\ \ \ the\ description\ of\ the\ Muffin\r\n
+comment2.params=
+comment2.target=Muffin\ create()
+comment2.text=\r\n\ create\r\n\ @return\ new\ Muffin\r\n
+comment3.params=
+comment3.target=java.lang.String\ getDescription()
+comment3.text=\r\n\ getDescription\r\n\ @return\ description\r\n
+comment4.params=
+comment4.target=int\ getCalorieCount()
+comment4.text=\r\n\ getCalorieCount\r\n\ @return\ calories\r\n
+comment5.params=
+comment5.target=java.lang.String\ getConsumptionMethod()
+comment5.text=\r\n\ getConsumptionMethod\r\n\ @return\ consumption\ method\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ toString\r\n\ @return\ \ \ \ \ \ useful\ info\ about\ the\ Muffin\r\n
+numComments=7

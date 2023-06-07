@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.reflect.*;
 
 /**
  * A TimsOrder stores every item that the user wishes to purchase.
@@ -11,7 +12,7 @@ public class TimsOrder
     /*Order info*/
     private int size;
     private String name;
-    //private TimsProduct[] items;
+    private TimsProduct[] items;
     
     /**
      * TimsOrder constructor, called by the create() method.
@@ -27,13 +28,25 @@ public class TimsOrder
             while(true) {
                 String temp;
                 System.out.println("\tWhat can I get you?");
-                System.out.print("\t\t(Item choices: Mug, Donut, MUffin, Kcups) : ");
+                System.out.print("\t\t(Item choices: Mug, Donut, Muffin, Kcups) : ");
                 temp = in.nextLine();
                 if(temp.equals("Mug") || temp.equals("Donut") || temp.equals("Muffin") || temp.equals("Kcups")) {
-                    
+                    try {
+                        Class<?> clazz = Class.forName(temp);               //get class with name
+                        Method meth = clazz.getMethod("create", null);      //get the create method                            
+                        items[i] = (TimsProduct)meth.invoke(null);          //set the latest item to the instantiated TimsProduct from the casted invocation of the create method
+                        
+                        break;
+                    } catch(Exception e) {
+                        //System.err.println(e);
+                        System.out.println("An error occured when adding item: \"" + temp +"\"");
+                    }
+                } else {
+                    System.out.println("\tNot an item.");
                 }
             }
         }
+        in.close();
     }
     
     /**
@@ -52,7 +65,7 @@ public class TimsOrder
         System.out.print("Enter order length: ");
         while(true) {
             try {
-                tempSize = Integer.parseInt(in.nextLine() + 1);
+                tempSize = Integer.parseInt(in.nextLine());
                 break;
             } catch(Exception e) {
                 System.out.println("Answer must be numeric.");
@@ -69,7 +82,11 @@ public class TimsOrder
      * @return double       the price of the order
      */
     public double getAmountDue() {
-        return 0;
+        double price = 0;
+        for(int i = 0; i < size; i ++) {
+            price += items[i].getRetailPrice();
+        }
+        return Math.round(price * 100.0) / 100.0; 
     }
     
     /**
@@ -77,7 +94,12 @@ public class TimsOrder
      * @return  useful information about the TimsOrder
      */
     public String toString() {
-        return "";
+        String out = "\n" + name + "'s order:   order size: " + size + "\n";
+        for(int i = 0; i < size; i ++) {
+            out = out + "\n\t" + items[i].toString();
+        }
+        out += "\n\n";
+        return out;
     }
     
     

@@ -15,6 +15,7 @@ public abstract class TimsProduct implements Commodity
      * Constructor for the TimsProduct
      * @param name      the name of the product
      * @param cost      the cost to make the product
+     * @param price     the price to buy the product
      */
     public TimsProduct(String name, double cost, double price) {
         this.name = name;
@@ -51,6 +52,6 @@ public abstract class TimsProduct implements Commodity
      * @return      useful info about the TimsProduct
      */
     public String toString() {
-        return "NAME: " + name + " COST: " + cost + "NAME: " + name +;
+        return name + " COST: $" + cost + " PRICE: $" + price;
     }
 }
